@@ -1,0 +1,125 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>hiker-monitor</title>
+	<meta name="description" content="Documentation for hiker-monitor">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">hiker-monitor</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>hiker-monitor</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#hiker-monitor" id="hiker-monitor" style="color: inherit; text-decoration: none;">
+					<h1>hiker-monitor</h1>
+				</a>
+				<p>性能监控平台</p>
+				<p>1.开发一个SDK 基础包构建包（web项目 核心的构建工具 只能编译TS而且不太多的配置）
+					webpack parcel snowpack esbuild、swc vite (rollup --&gt; 核心做什么)
+					2.amd.js cmd.js common.js esmodule node min.js
+					3.选择 microbundle + parcel/snowpack
+					4.准备上线 代码分割成2部分 1部分代码是源文件 GitHub issues
+					第2部分直接推到npm上（dist目录拷贝 package.json ）【npm login/npm publish】
+				5.api文档 + d.ts</p>
+				<p>1.microbundle 生成我们需要的模块化代码
+					2.parcel/snowpack 测试开发环境
+					3.api-extractor 帮我合并生成分分散的d.ts-&gt;index.d.ts -&gt;dist目录去
+					4.typedoc 遵循Tsdoc规范生成代码文档 gitbopok
+					5.性能监控的基本api 错误监控api 还原souremap 回溯用户操作
+				6.压缩用数据 -&gt;远程 ?? </p>
+				<p> server端 json -&gt; 洗数据的过程
+					1*1 gif 小的 a.gif?data=xxx.666.777
+				fetch</p>
+				<p>  1.现在webrtc理论
+					2.视频 一帧一帧的 html2canvas.
+					3.[xpath]
+					html/div[3]/ul[2]/a[1]
+					无头浏览器 -》 还原xpath -》png -》合成
+					代理掉用户的全部 操作
+				鼠标没有（假的 小圆点）</p>
+				<p>4.
+					4-1 html 转换成虚拟dom(唯一id)
+					4-2 MutationObserver dom丝丝变化
+					4-3 dom那些被动了虚拟dom记录下来
+					4-4 动了dom还原成真实dom
+					4-5 表单的事件
+				window.addEventListener(&#39;blur&#39;, this.onFormBlur, true)</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

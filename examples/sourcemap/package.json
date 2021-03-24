@@ -1,0 +1,21 @@
+{
+  "name": "sourcemap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "prod": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "server": "node server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.17.1",
+    "source-map": "^0.7.3",
+    "webpack": "^5.25.1",
+    "webpack-cli": "^4.5.0"
+  }
+}

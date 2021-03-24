@@ -1,0 +1,1 @@
+document.getElementById("js-btn").addEventListener("click",(function(){console.log(index)}));
